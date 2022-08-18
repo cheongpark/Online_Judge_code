@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 0, b = 1;
+	cin >> a;
+	for (int i = a; i >= 1; i--)
+	{
+		b = i;
+		for (int j = 0; j < a; j++)
+		{
+			cout << b << " ";
+			b += a;
+		}
+		cout << endl;
+	}
+}
