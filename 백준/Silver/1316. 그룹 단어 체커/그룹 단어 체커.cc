@@ -24,9 +24,9 @@ int main() {
 					break;
 				check[(int)word[j] - 97] = true;
 			}
+
 			if (j == word.length() - 1)
 				count++;
-			//cout << word[i] << " " << word[i + 1] << endl;
 		}
 	}
 	cout << count;
