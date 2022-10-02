@@ -1,17 +1,17 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
-int main() {
-	vector<int> list;
-	int data;
+int main()
+{
+	int x = 0, mx = 0, n = 0;
 
-	for (int i = 0; i < 9; i++) {
-		cin >> data;
-		list.push_back(data);
+	for (int i = 1; i <= 9; i++) {
+		cin >> x;
+		if (x >= mx) {
+			mx = x;
+			n = i;
+		}
 	}
-
-	cout << *max_element(list.begin(), list.end()) << " " << max_element(list.begin(), list.end()) - list.begin() + 1;
+	cout << mx << endl << n;
 }
