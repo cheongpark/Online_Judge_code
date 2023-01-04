@@ -2,16 +2,21 @@
 
 using namespace std;
 
-int main()
-{
-	int x = 0, y = 0, Q = 0;
+int main() {
+	int x = 0, y = 0;
 
 	cin >> x >> y;
 
-	if (0 < x && 0 < y) Q = 1;
-	else if (0 > x && 0 < y) Q = 2;
-	else if (0 < x && 0 > y) Q = 4;
-	else Q = 3;
-
-	cout << Q;
+	if (x > 0) {
+		if (y > 0)
+			cout << "1";
+		else
+			cout << "4";
+	}
+	else {
+		if (y > 0)
+			cout << "2";
+		else
+			cout << "3";
+	}
 }
