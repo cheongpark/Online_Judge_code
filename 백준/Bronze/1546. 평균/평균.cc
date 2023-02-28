@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
 	int n = 0, m = 0, test = 0;
-	double result = 0;
-	vector<double> tests;
+	float result = 0;
+	vector<float> tests;
 
 	cin >> n;
 
@@ -18,7 +18,7 @@ int main() {
 
 	m = *max_element(tests.begin(), tests.end());
 
-	for (double& fixtest : tests) {
+	for (float& fixtest : tests) {
 		fixtest = fixtest / m * 100;
 		result += fixtest;
 	}
