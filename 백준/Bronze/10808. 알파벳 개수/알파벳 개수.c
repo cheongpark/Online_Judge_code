@@ -1,0 +1,1 @@
+main(){int i,a[26]={};char S[100]={};scanf("%s",S);for(;i<100;)a[S[i++]-97]++;for(i=0;i<26;)printf("%d ",a[i++]);}
